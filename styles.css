@@ -1,3 +1,4 @@
+[hidden]{display:none!important}
 :root{
   --bg:#0b0d12; --bg2:#10131a; --card:#141823; --line:#232838;
   --text:#e9ecf3; --muted:#9aa3b5; --brand:#7c5cff; --brand2:#22d3a6;
@@ -269,3 +270,116 @@ details p{padding:0 22px 20px;color:var(--muted)}
   .menu-open .dd-btn{color:var(--text);font-weight:600}
 }
 .uc-hero .hero-cta{margin-top:28px}
+
+/* ===== v3: menu, subpagina's, tools, prijzen, blog ===== */
+.nav-inner{gap:24px}
+.nav-links{gap:22px;align-items:center}
+.nav-links > a.cur{color:var(--text)}
+.dd.open .dd-menu{display:grid;padding:22px 8px 8px}
+.dd-menu{min-width:300px}
+.dd-menu a{align-items:flex-start}
+.dd-menu a b{display:block;font-weight:600;font-size:14px}
+.dd-menu a small{display:block;color:var(--muted);font-size:12.5px;line-height:1.4}
+.dd-ic{width:30px;height:30px;flex:none;border-radius:8px;background:#1c2232;display:grid;place-items:center;font-size:15px}
+.dd-wide{min-width:560px}
+.dd:hover .dd-wide,.dd:focus-within .dd-wide,.dd.open .dd-wide{grid-template-columns:1fr 1fr}
+
+.center{text-align:center}
+.center .pill{margin:0 auto}
+.center .lead{margin:0 auto}
+.center-row{justify-content:center;margin-top:28px}
+.sub-hero{padding:64px 0 40px}
+.sub-hero h1{font-size:clamp(32px,4.6vw,52px);margin:18px 0 14px}
+.sub-hero .crumb{display:block}
+.tool-sec{padding-top:24px}
+.uc-grid-3{grid-template-columns:repeat(3,1fr)}
+
+.card-link{display:block;position:relative;padding-bottom:52px}
+.card-link .more{position:absolute;left:26px;bottom:20px;color:var(--brand2);font-size:14px;font-weight:600}
+.steps-simple li{display:flex;gap:16px;align-items:center}
+.steps-simple b{margin:0;flex:none}
+
+/* calculators */
+.tool-in{gap:16px}
+.fld{display:grid;gap:6px;font-weight:500;font-size:15px}
+.inp{display:flex;align-items:center;border:1px solid var(--line);border-radius:10px;background:var(--bg2);overflow:hidden}
+.inp:focus-within{border-color:var(--brand)}
+.inp input{flex:1;min-width:0;background:none;border:0;color:var(--text);font:16px Inter;padding:11px 12px;outline:0}
+.inp em{font-style:normal;color:var(--muted);padding:0 12px;font-size:14px;border-left:1px solid var(--line)}
+
+/* tekstpagina's */
+.prose h1{font-size:clamp(30px,4vw,44px);margin:10px 0 18px}
+.prose h2{font-size:24px;margin:36px 0 12px}
+.prose h3{font-size:18px;margin:0 0 6px}
+.prose p,.prose li{color:#c4cad6;margin-bottom:14px}
+.prose ul{padding-left:22px;margin-bottom:14px}
+.prose a{color:var(--brand2);text-decoration:underline;text-underline-offset:3px}
+.prose details p{margin-bottom:0}
+.draft{background:rgba(254,188,46,.1);border:1px solid rgba(254,188,46,.35);border-radius:12px;padding:12px 16px;color:#ffd987!important}
+.contact-box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:28px}
+.contact-box h2{margin-top:0}
+.steps-inline{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:12px}
+.steps-inline > div{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px}
+.steps-inline b{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:var(--brand);margin-bottom:12px}
+.steps-inline p{margin:0;font-size:15px}
+
+/* woordenlijst */
+.az{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;position:sticky;top:68px;background:var(--bg);padding:10px 0;z-index:5}
+.az a{width:36px;height:36px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;font-weight:600;color:var(--muted)}
+.az a:hover{color:var(--text);border-color:var(--brand)}
+.gl-letter{font-size:28px;margin:30px 0 10px;color:var(--brand2);scroll-margin-top:130px}
+.gl{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px 20px;margin-bottom:10px}
+.gl h3{font-size:17px;margin-bottom:4px}
+.gl p{color:var(--muted);font-size:15px}
+
+/* blog */
+.posts{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.post-card{display:flex;flex-direction:column;gap:10px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.25s}
+.post-card:hover{border-color:rgba(124,92,255,.55);transform:translateY(-3px)}
+.post-card h3{font-size:21px}
+.post-card p{color:var(--muted);font-size:15px}
+.post-card small{color:var(--muted);font-size:13px;margin-top:auto}
+.tag{display:inline-block;width:max-content;font-size:12px;font-weight:600;padding:3px 10px;border-radius:99px;background:rgba(124,92,255,.15);color:#c3b5ff}
+.post-meta{color:var(--muted);font-size:14px;margin-top:18px}
+
+/* prijzen */
+.plans-4{grid-template-columns:repeat(4,1fr)}
+.plan.ent .price b{font-size:34px}
+.cmp-plans td:not(:first-child),.cmp-plans th:not(:first-child){text-align:center}
+.cmp-plans tr.grp td{background:var(--bg);color:var(--brand2);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:10px 20px}
+.yes{color:var(--brand2);font-weight:700}
+.no{color:#4b5366}
+
+/* actiebalk + demo */
+.topbar.promo{background:linear-gradient(90deg,#5b1d1d,#3a1458)}
+.countdown{display:inline-block;margin:0 8px;padding:1px 8px;border-radius:6px;background:rgba(0,0,0,.35);font-variant-numeric:tabular-nums;font-weight:600}
+.demo{border:0;padding:0;background:transparent;width:min(960px,92vw);margin:auto}
+.demo::backdrop{background:rgba(0,0,0,.8)}
+.demo-media{aspect-ratio:16/9;background:#000;border-radius:16px;overflow:hidden}
+.demo-media iframe,.demo-media video{width:100%;height:100%;border:0;display:block}
+.demo-x{position:absolute;top:-44px;right:0;background:none;border:0;color:#fff;font-size:24px;cursor:pointer}
+.demo{overflow:visible}
+
+.foot-grid{grid-template-columns:1.6fr repeat(4,1fr)}
+
+@media (max-width:1100px){.plans-4{grid-template-columns:1fr 1fr;max-width:none}.nav-links{gap:16px}.nav-cta .btn-ghost{display:none}}
+@media (max-width:960px){
+  .uc-grid-3,.posts,.steps-inline{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:760px){
+  .plans-4{grid-template-columns:1fr}
+  .menu-open .nav-links{max-height:calc(100vh - 68px);overflow-y:auto;align-items:stretch}
+  .menu-open .dd-wide{grid-template-columns:1fr!important}
+  .menu-open .dd-menu{min-width:0}
+  .dd-menu{display:none!important}
+  .menu-open .dd.open .dd-menu{display:grid!important;position:static;padding:8px 0 0}
+  .menu-open .dd-btn{font-size:16px}
+  .cmp-plans{min-width:520px}
+}
+.calc > *{min-width:0}
+.inp input{width:100%}
+@media (max-width:760px){
+  .toggle{width:auto;max-width:100%;flex-wrap:wrap}
+  .toggle button{padding:8px 10px;font-size:13px}
+}
