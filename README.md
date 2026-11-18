@@ -13,3 +13,10 @@ Open `index.html` in je browser.
 
 ## Gratis hosten
 GitHub Pages, Netlify of Cloudflare Pages: upload de map, klaar.
+
+## Use-case pagina's
+De pagina's in `voor/` (dropshippers, media buyers, freelancers, DTC-merken, creative strategists),
+het "Use cases"-menu, de footer en de "Voor wie"-sectie op de homepage worden gegenereerd door
+`tools/usecases.py`. Pas teksten daar aan en draai:
+
+    python3 tools/usecases.py
