@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="nl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Merxa — AI-operator voor je webshop</title>
+<meta name="description" content="Merxa doet het zware werk in je webshop: klantonderzoek, UGC-video's, ad creatives en landingspagina's, gekoppeld aan Shopify en Meta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:title" content="Merxa — AI-operator voor je webshop">
+<meta property="og:description" content="Klantonderzoek, ads, UGC-video's en landingspagina's, door AI gemaakt en door jou goedgekeurd.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0b0d12">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="topbar">Nieuw: Merxa maakt nu ook complete UGC-video's met AI-creators <a href="#features">Bekijk →</a></div>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a href="#" class="logo"><span class="logo-mark">M</span>Merxa</a>
+    <nav class="nav-links">
+      <a href="#features">Functies</a>
+      <a href="#how">Zo werkt het</a>
+      <a href="#compare">Vergelijk</a>
+      <a href="#pricing">Prijzen</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#" class="btn btn-ghost">Inloggen</a>
+      <a href="#pricing" class="btn btn-primary">Start gratis</a>
+    </div>
+    <button class="burger" aria-label="Menu" onclick="document.body.classList.toggle('menu-open')">☰</button>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><span class="dot"></span>Live voor Shopify-shops</span>
+      <h1>Je webshop draait.<br><span class="grad">Merxa doet de rest.</span></h1>
+      <p class="lead">Een AI-operator die je klanten onderzoekt, advertenties en video's maakt en landingspagina's live zet. Jij keurt goed, Merxa voert uit.</p>
+      <ul class="checks">
+        <li>UGC-video's van script tot ondertitels</li>
+        <li>Landingspagina's op je eigen domein</li>
+        <li>Statische ads op basis van je echte productfoto's</li>
+        <li>Chat via WhatsApp, Telegram of Slack</li>
+      </ul>
+      <div class="hero-cta">
+        <a href="#pricing" class="btn btn-primary btn-lg">Start met €40 tegoed</a>
+        <a href="#how" class="btn btn-ghost btn-lg">Bekijk hoe het werkt</a>
+      </div>
+      <p class="fine">Geen contract · Opzeggen wanneer je wil · Jouw data blijft van jou</p>
+    </div>
+
+    <div class="dash" aria-label="Voorbeeld van het Merxa dashboard">
+      <div class="dash-top">
+        <span class="lights"><i></i><i></i><i></i></span>
+        <span class="dash-title">merxa / taken</span>
+        <span class="live">● live</span>
+      </div>
+      <div class="dash-stats">
+        <div><small>Omzet 7d</small><b>€18.420</b><em class="up">+23%</em></div>
+        <div><small>ROAS</small><b>3,8×</b><em class="up">+0,6</em></div>
+        <div><small>Taken klaar</small><b id="doneCount">47</b><em>deze week</em></div>
+      </div>
+      <ul class="feed" id="feed"></ul>
+      <div class="dash-input"><span>Vraag Merxa iets…</span><kbd>↵</kbd></div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEGRATIONS -->
+<section class="strip">
+  <div class="wrap">
+    <p>Werkt samen met de tools die je al gebruikt</p>
+    <div class="strip-row">
+      <span>Shopify</span><span>Meta Ads</span><span>TikTok Ads</span><span>Klaviyo</span><span>Google Sheets</span><span>Notion</span><span>WhatsApp</span><span>Slack</span>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section id="features" class="section">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Functies</span>
+      <h2>Een heel marketingteam, in één dashboard</h2>
+      <p>Alles begint bij onderzoek naar je klanten. Daarna bouwt Merxa de creatives die op die inzichten inspelen.</p>
+    </div>
+    <div class="cards">
+      <article class="card">
+        <div class="ic">🔎</div>
+        <h3>Klantonderzoek</h3>
+        <p>Leest reviews, comments en concurrenten en vat pijnpunten, wensen en koopmotieven samen in hoeken die je kunt testen.</p>
+        <div class="tagrow"><span>Reviews</span><span>Concurrenten</span><span>Angles</span></div>
+      </article>
+      <article class="card">
+        <div class="ic">🎬</div>
+        <h3>UGC-video's</h3>
+        <p>Schrijft het script, kiest een vaste AI-creator en bouwt elke scène met jouw product erin. Eerst zie je het storyboard, dan pas de render.</p>
+        <div class="tagrow"><span>Script</span><span>Creator</span><span>Ondertitels</span></div>
+      </article>
+      <article class="card">
+        <div class="ic">🖼️</div>
+        <h3>Ad creatives</h3>
+        <p>Maakt kant-en-klare statische ads met je echte productfoto's, in elk formaat. Goedkeuren of weggooien met één klik.</p>
+        <div class="tagrow"><span>1:1</span><span>4:5</span><span>9:16</span></div>
+      </article>
+      <article class="card">
+        <div class="ic">⚡</div>
+        <h3>Landingspagina's</h3>
+        <p>Van één chatbericht naar een live pagina: tekst, layout, beelden en mobiele check. Gepubliceerd op je eigen domein.</p>
+        <div class="tagrow"><span>Copy</span><span>Design</span><span>Publiceren</span></div>
+      </article>
+      <article class="card">
+        <div class="ic">📈</div>
+        <h3>Campagne-inzicht</h3>
+        <p>Kijkt dagelijks naar je Meta- en TikTok-cijfers en meldt welke ads je moet opschalen en welke je beter kunt stoppen.</p>
+        <div class="tagrow"><span>ROAS</span><span>CPA</span><span>Alerts</span></div>
+      </article>
+      <article class="card">
+        <div class="ic">🧠</div>
+        <h3>Geheugen voor je merk</h3>
+        <p>Onthoudt je tone of voice, doelgroep en wat eerder werkte. Elke nieuwe taak wordt daardoor beter dan de vorige.</p>
+        <div class="tagrow"><span>Brand</span><span>Doelgroep</span><span>Learnings</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW -->
+<section id="how" class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Zo werkt het</span>
+      <h2>In drie stappen aan de slag</h2>
+    </div>
+    <ol class="steps">
+      <li><b>1</b><h3>Koppel je shop</h3><p>Verbind Shopify en je advertentieaccounts. De onboarding duurt een paar minuten.</p></li>
+      <li><b>2</b><h3>Geef een opdracht</h3><p>"Maak 5 ads voor onze bestseller" — via het dashboard of gewoon in WhatsApp.</p></li>
+      <li><b>3</b><h3>Keur goed, ga live</h3><p>Je ziet elke stap in het dashboard. Jij beslist wat er online gaat.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- COMPARE -->
+<section id="compare" class="section">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Vergelijk</span>
+      <h2>Waarom geen bureau of freelancer?</h2>
+    </div>
+    <div class="table-wrap">
+      <table class="cmp">
+        <thead><tr><th></th><th>Bureau</th><th>Freelancers</th><th class="hl">Merxa</th></tr></thead>
+        <tbody>
+          <tr><td>Kosten per maand</td><td>€2.500+</td><td>€800–2.000</td><td class="hl">vanaf €99</td></tr>
+          <tr><td>Doorlooptijd nieuwe ad</td><td>1–2 weken</td><td>3–5 dagen</td><td class="hl">minuten</td></tr>
+          <tr><td>UGC-video's</td><td>Extra kosten</td><td>Per video</td><td class="hl">Inbegrepen</td></tr>
+          <tr><td>Beschikbaar</td><td>Kantooruren</td><td>Wisselend</td><td class="hl">24/7</td></tr>
+          <tr><td>Kent je merk</td><td>Na onboarding</td><td>Per persoon anders</td><td class="hl">Onthoudt alles</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ROI CALCULATOR -->
+<section id="calc" class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Rekenhulp</span>
+      <h2>Wat bespaar je per maand?</h2>
+      <p>Vul in wat je nu uitgeeft aan content. Een schatting, geen belofte.</p>
+    </div>
+    <div class="calc">
+      <div class="calc-in">
+        <label>Ads per maand <output id="adsOut">20</output><input type="range" id="ads" min="0" max="100" value="20"></label>
+        <label>UGC-video's per maand <output id="ugcOut">4</output><input type="range" id="ugc" min="0" max="30" value="4"></label>
+        <label>Landingspagina's per maand <output id="lpOut">1</output><input type="range" id="lp" min="0" max="10" value="1"></label>
+      </div>
+      <div class="calc-out">
+        <div><small>Nu (freelancers)</small><b id="costNow">€0</b></div>
+        <div><small>Met Merxa Growth</small><b id="costMerxa">€0</b></div>
+        <div class="save"><small>Je bespaart</small><b id="costSave">€0</b></div>
+        <p class="fine">Gebaseerd op gemiddeld €40 per ad, €150 per UGC-video en €400 per landingspagina, plus geschat AI-tegoed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap" class="section">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">Roadmap</span><h2>Waar we aan bouwen</h2></div>
+    <div class="road">
+      <div class="col"><h4><span class="st done"></span>Live</h4><p>Klantonderzoek</p><p>Statische ads</p><p>Shopify-koppeling</p><p>WhatsApp-chat</p></div>
+      <div class="col"><h4><span class="st wip"></span>In ontwikkeling</h4><p>UGC-video's</p><p>Landingspagina's</p><p>Meta-inzichten</p></div>
+      <div class="col"><h4><span class="st next"></span>Gepland</h4><p>TikTok Ads</p><p>WooCommerce</p><p>E-mailflows</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="section alt">
+  <div class="wrap">
+    <div class="head">
+      <span class="eyebrow">Prijzen</span>
+      <h2>Simpel. Met een limiet die jij bepaalt.</h2>
+      <p>AI-gebruik loopt via tegoed met een maximum dat je zelf instelt. Je eerste €40 krijg je van ons.</p>
+    </div>
+    <div class="toggle" role="group" aria-label="Facturatie">
+      <button class="on" data-bill="m">Maandelijks</button>
+      <button data-bill="y">Jaarlijks <span>-20%</span></button>
+    </div>
+    <div class="plans">
+      <div class="plan">
+        <h3>Starter</h3>
+        <p class="price"><b data-m="49" data-y="39">€49</b>/mnd</p>
+        <p class="pdesc">Voor shops die net beginnen met adverteren.</p>
+        <ul><li>Klantonderzoek</li><li>Statische ads</li><li>1 gekoppelde shop</li><li>Chat via WhatsApp</li></ul>
+        <a href="#" class="btn btn-ghost btn-block">Kies Starter</a>
+      </div>
+      <div class="plan featured">
+        <span class="badge">Populairst</span>
+        <h3>Growth</h3>
+        <p class="price"><b data-m="99" data-y="79">€99</b>/mnd</p>
+        <p class="pdesc">Alles wat je nodig hebt om op te schalen.</p>
+        <ul><li>Alles uit Starter</li><li>UGC-video's</li><li>Landingspagina's</li><li>Campagne-inzicht</li><li>€40 starttegoed</li></ul>
+        <a href="#" class="btn btn-primary btn-block">Kies Growth</a>
+      </div>
+      <div class="plan">
+        <h3>Scale</h3>
+        <p class="price"><b data-m="249" data-y="199">€249</b>/mnd</p>
+        <p class="pdesc">Voor merken met meerdere shops of markten.</p>
+        <ul><li>Alles uit Growth</li><li>Tot 5 shops</li><li>Teamleden</li><li>Persoonlijke support</li></ul>
+        <a href="#" class="btn btn-ghost btn-block">Kies Scale</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="wrap narrow">
+    <div class="head"><span class="eyebrow">FAQ</span><h2>Veelgestelde vragen</h2></div>
+    <details><summary>Moet ik zelf een AI-key regelen?</summary><p>Nee. Al het AI-gebruik loopt via je tegoed in Merxa. Je stelt zelf een maximum in, dus je krijgt nooit een verrassing op je factuur.</p></details>
+    <details><summary>Zet Merxa zelf dingen live?</summary><p>Alleen als jij dat toestaat. Standaard zie je elk resultaat eerst in het dashboard en keur je het goed.</p></details>
+    <details><summary>Werkt het ook zonder Shopify?</summary><p>Op dit moment is Shopify de belangrijkste koppeling. WooCommerce staat op de roadmap.</p></details>
+    <details><summary>Kan ik op elk moment opzeggen?</summary><p>Ja. Er is geen contract en je kunt per maand opzeggen. Je data kun je altijd exporteren.</p></details>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <div class="wrap">
+    <h2>Laat je webshop groeien terwijl jij slaapt.</h2>
+    <p>Zet je op de early-access lijst. Je hoort het als eerste zodra we live gaan.</p>
+    <form class="wait" id="waitForm" novalidate>
+      <input type="email" name="email" placeholder="jij@jouwshop.nl" required aria-label="E-mailadres">
+      <button class="btn btn-light btn-lg" type="submit">Zet me op de lijst</button>
+    </form>
+    <p class="wait-msg" id="waitMsg" role="status"></p>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-grid">
+    <div><a href="#" class="logo"><span class="logo-mark">M</span>Merxa</a><p>De AI-operator voor e-commerce.</p><a class="contact-mail" data-mail hidden></a></div>
+    <div><h4>Product</h4><a href="#features">Functies</a><a href="#how">Zo werkt het</a><a href="#pricing">Prijzen</a></div>
+    <div><h4>Bedrijf</h4><a href="#">Over ons</a><a href="#">Affiliates</a><a href="#" data-mail-link>Contact</a></div>
+    <div><h4>Juridisch</h4><a href="#">Voorwaarden</a><a href="#">Privacy</a></div>
+  </div>
+  <p class="wrap copy">© <span id="yr"></span> Merxa. Alle rechten voorbehouden.</p>
+</footer>
+
+<a href="#pricing" class="mobile-cta btn btn-primary">Start gratis</a>
+<script src="config.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
